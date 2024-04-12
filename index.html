@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pj2js</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .explanation {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSC 445 Project 2 Joel Santos - File Transfer Protocol</h1>
+        <div>
+            <h2>Benchmark 1 - Host pi.cs.oswego.edu Client HomePC - upload 5MB File/WindowSize 32/NoDrops Bytes/second</h2>
+            <img src="https://github.com/NichtSylph/filetransferapp/blob/main/images/graph1.png" alt="img1">
+            <h2>Benchmark 2 - Host pi.cs.oswego.edu Client HomePC - download 5MB File/WindowSize 14/Drops</h2>
+            <img src="https://github.com/NichtSylph/filetransferapp/blob/main/images/graph2.png" alt="img2">
+            <h2>Benchmark 3 - Host pi.cs.oswego moxie.cs.oswego.edu Client HomePC - upload 5MB File/WindowSize 18/NoDrops</h2>
+            <img src="https://github.com/NichtSylph/filetransferapp/blob/main/images/graph3.png" alt="img3">
+            <h2>Benchmark 4 - Host moxie.cs.oswego.edu Client HomePC - download 5MB File/WindowSize 40/Drops</h2>
+            <img src="https://github.com/NichtSylph/filetransferapp/blob/main/images/graph4.png" alt="img4">
+        </div>
+        <div class="explanation">
+            <h2>Performance Analysis</h2>
+            <p>Depending on the host where files were uploaded and downloaded from, the throughputs vary quite a bit depending on the window size, since it allows for sending</p>
+            <p>more bits at a time. The larger the window size, the more packets can be sent before an acknowledgment is received.</p>
+        </div>        
+    </div>
+</body>
+</html>
